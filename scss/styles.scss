@@ -1,0 +1,120 @@
+//variable
+$primary: #de6c17;
+$primary-hover: #ff6d00;
+$h1-font-size: 36px;
+$primary-font-color: #333;
+
+// button
+.btn.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover{
+        background-color: $primary-hover;
+        border-color: $primary-hover;
+    }
+}
+p, h1, h2, h3, a, span {
+    color: $primary-font-color;
+}
+
+//hero
+.hero {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #00000095 85%), url('../assets/main-banner.png');
+   // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a') no-repeat;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    .hero-content{
+        h2 {
+            font-size: $h1-font-size;
+            line-height: 1.5;
+            color: #fff; 
+            padding-bottom: 10px;
+        }
+        p {
+            padding-bottom: 10px;
+            color: #fff; 
+        }
+    }
+}
+.hero-bottom-border {
+    
+    display: block;
+    content: '';
+    width: 100%;
+    height: 50px;
+    background-image: url(/assets/banner-wave.svg);
+    margin-top: -30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services {
+    .services-header {
+        text-align: center;
+        padding: 60px 0 40px 0;
+        h2 {
+            font-size: 32px;
+        }
+    }
+    .services-col {
+        padding: 0 20px;
+        padding-bottom: 30px;
+
+        .services-card{
+            border: 1.5px solid #dadada;
+            border-radius: 5px;
+            img {
+                width: 100%;
+            }
+            .services-card-content {
+                padding: 20px;
+                h3{
+                    font-size: 24px;
+                }
+                a {
+                    color: $primary;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                &:hover{
+                    color: $primary-hover;
+                }
+                &::after {
+                    content: '>';
+                    padding: 5px;
+                    color: $primary;
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+    
+}
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+    .services {
+        .services-col {
+            .services-card{
+                display: flex;
+                img {
+                    width: 50%;
+                    flex:  50%;
+                    height: 285px;
+                    object-fit: cover;
+                }
+                
+                .services-card-content {
+                    flex: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero {
+        height: 50vh;
+    }
+}

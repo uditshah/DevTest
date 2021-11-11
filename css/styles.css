@@ -1,0 +1,79 @@
+.btn.btn-primary {
+  background-color: #de6c17;
+  border-color: #de6c17; }
+  .btn.btn-primary:hover {
+    background-color: #ff6d00;
+    border-color: #ff6d00; }
+
+p, h1, h2, h3, a, span {
+  color: #333; }
+
+.hero {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #00000095 85%), url("../assets/main-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh; }
+  .hero .hero-content h2 {
+    font-size: 36px;
+    line-height: 1.5;
+    color: #fff;
+    padding-bottom: 10px; }
+  .hero .hero-content p {
+    padding-bottom: 10px;
+    color: #fff; }
+
+.hero-bottom-border {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 50px;
+  background-image: url(/assets/banner-wave.svg);
+  margin-top: -30px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.services .services-header {
+  text-align: center;
+  padding: 60px 0 40px 0; }
+  .services .services-header h2 {
+    font-size: 32px; }
+
+.services .services-col {
+  padding: 0 20px;
+  padding-bottom: 30px; }
+  .services .services-col .services-card {
+    border: 1.5px solid #dadada;
+    border-radius: 5px; }
+    .services .services-col .services-card img {
+      width: 100%; }
+    .services .services-col .services-card .services-card-content {
+      padding: 20px; }
+      .services .services-col .services-card .services-card-content h3 {
+        font-size: 24px; }
+      .services .services-col .services-card .services-card-content a {
+        color: #de6c17;
+        text-decoration: none;
+        font-weight: 600; }
+      .services .services-col .services-card .services-card-content:hover {
+        color: #ff6d00; }
+      .services .services-col .services-card .services-card-content::after {
+        content: '>';
+        padding: 5px;
+        color: #de6c17;
+        font-weight: 600; }
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+  .services .services-col .services-card {
+    display: flex; }
+    .services .services-col .services-card img {
+      width: 50%;
+      flex: 50%;
+      height: 285px;
+      object-fit: cover; }
+    .services .services-col .services-card .services-card-content {
+      flex: 50%; } }
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    height: 50vh; } }

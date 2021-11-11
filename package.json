@@ -1,0 +1,24 @@
+{
+  "name": "blacksheepcreative",
+  "description": "A client has come to us wanting some updates to their dog sitting website. Our designer has provided some changes for you to use. You’ll need to create these sections so that they are responsive across different screen sizes, you have designs for mobile, tablet and desktop views. \r Please try to spend no more than 2 hours to complete both of these sections.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackSheepCreative/DevTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackSheepCreative/DevTest/issues"
+  },
+  "homepage": "https://github.com/BlackSheepCreative/DevTest#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "node-sass": "^6.0.1"
+  }
+}
